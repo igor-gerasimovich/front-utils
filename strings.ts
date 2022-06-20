@@ -1,4 +1,4 @@
-const reqValidString(val: any): string {
+export function reqValidString(val: any): string {
 	if (typeof val !== 'string') {
 		throw new Error(`Value is not valid string got ${typeof val}`);
 	}
