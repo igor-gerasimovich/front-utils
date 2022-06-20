@@ -2,11 +2,15 @@
   "name": "@igor-gerasimovich/front-utils",
   "version": "0.0.2",
   "description": "",
-  "main": "index.js",
   "private": false,
+
+  "main": "dist/front-utils.js",
+  "module": "dist/front-utils.js",
+  "types": "dist/index.d.ts",
+
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "build": "NODE_OPTIONS=--max_old_space_size=6144 microbundle build --no-compress --format cjs --output dist ./strings.ts ./types.ts"
+    "build": "rm -rf dist && NODE_OPTIONS=--max_old_space_size=6144 microbundle build --no-compress --format cjs --output dist ./index.ts"
   },
   "repository": {
     "type": "git",
@@ -15,8 +19,8 @@
   "devDependencies": {
     "microbundle": "^0.15.0"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Igor Gerasimovich <mgorunuch.igor@gmail.com> (https://mgorunuch.pro/)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/igor-gerasimovich/front-utils/issues"
   },
