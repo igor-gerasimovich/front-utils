@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "build": "NODE_OPTIONS=--max_old_space_size=6144 microbundle build --no-compress --format cjs --output dist ./strings.ts ./types.ts"
