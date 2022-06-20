@@ -1,11 +1,10 @@
-export function reqValidString(val: any): string {
-	if (typeof val !== 'string') {
-		throw new Error(`Value is not valid string got ${typeof val}`);
-	}
+import {reqString} from "./types";
 
-	if (val.trim() === '') {
+export function reqValidString(val: any): string {
+	const str = reqString(val);
+	if (str.trim() === '') {
 		throw new Error(`Expected not empty valid string got (${val})`)
 	}
 
-	return val.trim();
+	return str.trim();
 }
