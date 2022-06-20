@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/igor-gerasimovich/front-utils/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/igor-gerasimovich/front-utils#readme"
 }
