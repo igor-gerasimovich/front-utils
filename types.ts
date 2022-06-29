@@ -9,6 +9,10 @@ export function isString(v: any): v is string {
   return typeof v === 'string';
 }
 
+export function isBoolean(v: any): v is boolean {
+  return typeof v === 'boolean';
+}
+
 export function isNumber(v: any): v is number {
   return typeof v === 'number';
 }
